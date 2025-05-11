@@ -222,3 +222,70 @@ Below is a use case diagram for the hotel booking system showing the main actors
    - Manage Platform Settings
 
 The diagram illustrates how these actors interact with the system and highlights the relationships between different use cases, providing a clear visualization of the system's functional requirements.
+
+## Acceptance Criteria
+
+### Understanding Acceptance Criteria
+
+Acceptance Criteria are specific conditions or requirements that must be met for a user story, feature, or product to be considered complete and acceptable. They define the boundaries and parameters of what "done" means from the stakeholder's perspective and serve as a clear communication tool between business stakeholders and development teams.
+
+Well-defined acceptance criteria are:
+- Clear and concise
+- Testable and measurable
+- Agreed upon by all stakeholders
+- Focused on business value
+- Written from the user's perspective
+
+### Importance in Requirement Analysis
+
+Acceptance Criteria play several crucial roles in the requirement analysis process:
+
+1. **Eliminating Ambiguity**: They provide specific, measurable outcomes that remove guesswork and prevent misinterpretations of requirements.
+
+2. **Setting Boundaries**: They clearly define what is in and out of scope for a particular feature or story.
+
+3. **Facilitating Testing**: QA teams can convert acceptance criteria directly into test cases, ensuring that testing aligns with stakeholder expectations.
+
+4. **Managing Expectations**: They create a shared understanding among stakeholders, product owners, developers, and testers about what will be delivered.
+
+5. **Preventing Scope Creep**: Well-defined acceptance criteria make it easier to identify when requested changes fall outside the original scope.
+
+6. **Defining Definition of Done**: They provide objective measures to determine when a feature or user story is complete and ready for delivery.
+
+### Example: Acceptance Criteria for Hotel Booking Checkout Feature
+
+**User Story**: As a guest, I want to complete the booking checkout process so that I can finalize my reservation and receive confirmation.
+
+**Acceptance Criteria**:
+
+1. **Reservation Summary Display**
+   - System must display property details including name, address, and images
+   - Booking dates (check-in and check-out) must be clearly displayed
+   - Number of guests must be shown and match the selection made during booking
+   - Total price breakdown must include base rate, taxes, and any additional fees
+
+2. **Payment Processing**
+   - System must accept major credit cards (Visa, MasterCard, American Express, Discover)
+   - Payment form must validate card number, expiration date, and CVV in real-time
+   - System must display a secure payment indicator (lock icon and https)
+   - Payment errors must display clear error messages with resolution steps
+
+3. **Guest Information Collection**
+   - System must collect guest name, email, and phone number
+   - For registered users, this information should be pre-populated from their profile
+   - Email validation must ensure proper format (contains @ and valid domain)
+   - Phone number validation must ensure proper format based on country code
+
+4. **Booking Confirmation**
+   - System must display a confirmation message with booking reference number within 5 seconds of successful payment
+   - Confirmation email must be sent to the guest's email address within 2 minutes
+   - Confirmation page must include options to view booking details or return to homepage
+   - Booking must appear in the user's account under "My Bookings" if they are logged in
+
+5. **Error Handling**
+   - If payment fails, system must retain all entered information except payment details
+   - If session times out, entered data must be saved for at least 15 minutes
+   - System must handle network interruptions by saving form data and allowing retry
+   - Clear error messages must be displayed for any validation failures
+
+These acceptance criteria provide a clear framework for developers to build against and for testers to verify, ensuring that the checkout feature meets user needs and business requirements.
