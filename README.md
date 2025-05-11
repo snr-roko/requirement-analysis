@@ -190,7 +190,7 @@ Use Case Diagrams depict the functional requirements of a system from an externa
 ### Hotel Booking System Use Case Diagram
 
 Below is a use case diagram for the hotel booking system showing the main actors and their interactions with the system:
-alx-booking-uc.png image below
+
 ![user_case_diagram](https://github.com/user-attachments/assets/e98724a4-6d6e-4379-b129-eda5e12edb0b)
 
 *Note: The diagram shows three primary actors (Guest, Host, and Administrator) and their interactions with key system functionalities such as user registration, property management, booking processes, and administrative functions.*
